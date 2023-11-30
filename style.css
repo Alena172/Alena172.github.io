@@ -331,20 +331,22 @@ iframe{
 
 .f1 {
     grid-area: f1;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .f2 {
     grid-area: f2;
+    margin-left: -20px;
   }
   
   .f3 {
+    margin-left: -20px;
     grid-area: f3;
   }
   
   .f4 {
     grid-area: f4;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .f5 {
@@ -355,7 +357,7 @@ iframe{
   
   .f2 h3,
   .f3 h3 {
-    margin-right: 300px;
+    margin-left: 40px;
     position: relative;
     color: var(--color3);
   }
