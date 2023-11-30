@@ -139,7 +139,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 400px;
-    background-image: url(Alena172.github.io/фон.jpg);
+    background-image: url(фон.jpg);
     background-size: cover; /* Позволяет масштабировать изображение так, чтобы оно полностью покрывало заданный контейнер, не обрезаясь */
     background-position: center; /* Центрирует изображение в контейнере */
     background-repeat: no-repeat; /* Запрещает повторение изображения */
@@ -208,7 +208,7 @@ body {
 
     .main_im{
         height: 400px;
-        background-image: url(Alena172.github.io/фон2.jpg);
+        background-image: url(фон2.jpg);
     }
 
     .menu{
@@ -253,7 +253,7 @@ body {
             "ad4"
             "ad5"
             "ad6";
-    }
+    } 
 
     footer {
         color: white;
@@ -291,7 +291,7 @@ body {
 }
 
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1000px) {
 
     .advanteges {
         grid-template-columns: 1fr 1fr;
@@ -355,9 +355,9 @@ iframe{
   
   .f2 h3,
   .f3 h3 {
+    margin-right: 300px;
     position: relative;
     color: var(--color3);
-    left: 35px;
   }
   
   .f2 h3:after,
@@ -388,22 +388,22 @@ iframe{
     content: "";
   }
   
-  .footer a {
+  footer a {
     text-decoration: none;
     color: var(--color3);
   }
   
-  .footer a:hover {
+  footer a:hover {
     text-decoration: none;
     color: var(--color5);
   
   }
   
-  .footer li {
+  footer li {
     list-style: none;
     padding-bottom: 10px;
   }
   
-  .footer p {
+  footer p {
     color: var(--color3);
-  }
+  } 
