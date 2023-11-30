@@ -139,7 +139,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 400px;
-    background-image: url(фон.jpg);
+    background-image: url(Alena172.github.io/фон.jpg);
     background-size: cover; /* Позволяет масштабировать изображение так, чтобы оно полностью покрывало заданный контейнер, не обрезаясь */
     background-position: center; /* Центрирует изображение в контейнере */
     background-repeat: no-repeat; /* Запрещает повторение изображения */
