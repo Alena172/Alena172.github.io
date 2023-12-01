@@ -2,7 +2,7 @@ html {
     overflow-x: hidden;
     --color1: #848484;
     --color2: #4E4E4E;
-    --coloe3: rgb(223, 170, 170);
+    --color3: rgb(223, 170, 170);
 }
 
 *,
@@ -175,7 +175,10 @@ body {
 }
 
 
+
 .advanteges {
+    margin-left:30px;
+    margin-right:30px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
@@ -194,8 +197,55 @@ body {
     text-align: center;
 }
 
+@media (min-width: 1001px) {
+
+
+    footer {
+        color: white;
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1.6fr 0.8fr 0.8fr 0.8fr;
+        grid-template-rows: 1.9fr 0.1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "f1 f2 f3 f4"
+        "f5 f5 f5 f5";
+        background-color: var(--color1);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .advanteges {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "ad1 ad2"
+            "ad3 ad4"
+            "ad5 ad6";
+    }
+
+    footer {
+        color: white;
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.3fr 1.4fr 0.3fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "f1 f2"
+        "f3 f4"
+        "f5 f5";
+        background-color: var(--color1);
+    }
+}
+
 
 @media (max-width: 768px) {
+  p{
+    font-size: 12px;
+  }
 
     .header__burger-btn {
         display: block;
@@ -244,6 +294,8 @@ body {
     }
 
     .advanteges {
+        margin-left:0px;
+        margin-right:0px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -271,50 +323,6 @@ body {
         background-color: var(--color1);
     }
 
-}
-
-@media (min-width: 1001px) {
-
-
-    footer {
-        color: white;
-        grid-area: footer;
-        display: grid;
-        grid-template-columns: 1.6fr 0.8fr 0.8fr 0.8fr;
-        grid-template-rows: 1.9fr 0.1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-        "f1 f2 f3 f4"
-        "f5 f5 f5 f5";
-        background-color: var(--color1);
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1000px) {
-
-    .advanteges {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "ad1 ad2"
-            "ad3 ad4"
-            "ad5 ad6";
-    }
-
-    footer {
-        color: white;
-        grid-area: footer;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.3fr 1.4fr 0.3fr;
-        gap: 0px 0px;
-        grid-template-areas:
-        "f1 f2"
-        "f3 f4"
-        "f5 f5";
-        background-color: var(--color1);
-    }
 }
 
 
@@ -352,14 +360,14 @@ iframe{
   .f5 {
     grid-area: f5;
     background-color: var(--color2);
-    color: var(--color3);
+    color: white;
   }
   
   .f2 h3,
   .f3 h3 {
     margin-left: 40px;
     position: relative;
-    color: var(--color3);
+    color: white;
   }
   
   .f2 h3:after,
@@ -369,14 +377,14 @@ iframe{
     left: 0;
     width: 30%;
     height: 2px;
-    background-color: var(--color3);
+    background-color: white;
     content: "";
   }
   
   .f1 h3,
   .f4 h3 {
     position: relative;
-    color: var(--color3);
+    color: white;
   }
   
   .f1 h3:after,
@@ -386,18 +394,18 @@ iframe{
     left: 0;
     width: 30%;
     height: 2px;
-    background-color: var(--color3);
+    background-color: white;
     content: "";
   }
   
   footer a {
     text-decoration: none;
-    color: var(--color3);
+    color: white;
   }
   
   footer a:hover {
     text-decoration: none;
-    color: var(--color5);
+    color: var(--color3);
   
   }
   
@@ -407,5 +415,115 @@ iframe{
   }
   
   footer p {
-    color: var(--color3);
+    color: white;
   } 
+
+  
+@media (min-width: 713px) {
+    form {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 120px 1fr;
+        gap: 0px 40px;
+        grid-template-areas:
+            "lable lable"
+            "n1 n2"
+            "end end";
+    }
+  }
+  
+  @media (max-width: 712px) {
+    form {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "lable"
+            "n1"
+            "n2"
+            "end";
+    }
+  }
+  
+  center{
+    margin-top: 80px;
+    padding-bottom: 70px;
+    background-color: #ececec;
+  }
+  
+  
+  
+  .lable {
+    grid-area: lable;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+  }
+  
+
+.lable h2{
+    margin: 45px;
+}
+
+  
+  .end {
+    grid-area: end;
+    width: 100%;
+  }
+  
+  
+  .n1 {
+    grid-area: n1;
+  }
+  
+  
+  .n2 {
+    grid-area: n2;
+  }
+  .sub_but{
+    color:white;
+    border: none;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--color3);
+  }
+  
+  label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  select{
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid var(--color3);
+  }
+  
+  input {
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid var(--color3);
+  }
+  
+  input:hover, select:hover {
+    background-color: var(--color3);
+  }
+  
+  input:focus, select:focus{
+    background-color: var(--color3);
+    outline: 0;
+    color: white;
+  }
