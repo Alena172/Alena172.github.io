@@ -438,7 +438,7 @@ iframe{
         max-width: 80%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "lable"
@@ -453,13 +453,13 @@ iframe{
     padding-bottom: 70px;
     background-color: #ececec;
   }
-  
-  
+
   
   .lable {
     grid-area: lable;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 10px;
     display: block;
     font-weight: bold;
   }
@@ -497,7 +497,7 @@ iframe{
   label {
     text-align: left;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: bold;
   }
   select{
@@ -526,4 +526,54 @@ iframe{
     background-color: var(--color3);
     outline: 0;
     color: white;
+  }
+
+  .icon {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px white;
+  }
+  
+  .icon i {
+    position: relative;
+    color: white;
+    font-size: 26px;
+    margin-top: 12px;
+    margin-left: 13px;
+    transition: all 0.25s ease;
+  }
+  
+  .icon:hover i {
+    color: white;
+  }
+  
+  .icon::before,
+  .icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+    border-radius: 30px;
+  }
+  
+  .icon::before {
+    border-radius: 0;
+    margin-top: -100%;
+    background: linear-gradient(#ff5f2e 0, var(--color3) 98%);
+  }
+  
+  .icon:hover::before {
+    margin-top: 0;
+  }
+  
+  #icon3 {
+    margin-left: 10px;
   }
