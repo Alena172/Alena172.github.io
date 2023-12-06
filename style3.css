@@ -222,9 +222,6 @@ body {
     tbody td {
       font-size: 10px;
     }
-    table{
-      width: 100%;
-    }
 }
 
 
@@ -344,6 +341,10 @@ h2{
             "card2"
             "card3"
             "card4";
+    }
+    table{
+      width: 100%!important;
+      margin: 0px;
     }
   }
 
