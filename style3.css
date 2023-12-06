@@ -220,7 +220,13 @@ body {
         background-color: var(--color1);
     }
     tbody td {
-      font-size: 10px;
+      font-size: 12px;
+    }
+    .price-list h2{
+      font-size: 20px;
+    }
+    .price-list th{
+      font-size: 14px;
     }
 }
 
@@ -342,10 +348,6 @@ h2{
             "card3"
             "card4";
     }
-    table{
-      width: 100%!important;
-      margin: 0px;
-    }
   }
 
 .price-list {
@@ -365,14 +367,14 @@ table {
   margin-bottom: 20px;
 }
 
-thead th {
+th {
   color: #333;
   text-transform: uppercase;
   padding: 15px;
   font-weight: bold;
 }
 
-tbody td {
+td {
   padding: 15px;
   font-size: 14px;
 }
@@ -385,6 +387,12 @@ tr{
   cursor: pointer;
 }
 
+#servicesTable td {
+  text-align: left; 
+}
+#servicesTable td:nth-child(2) {
+  text-align: center; 
+}
 
 .dropdown-content {
   display: none;
@@ -394,6 +402,10 @@ tr{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px;
   z-index: 1;
+}
+
+.description td{
+  text-align: justify!important;
 }
   .icon {
     display: inline-block;
