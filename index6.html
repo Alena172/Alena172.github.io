@@ -4,24 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>beauty_studio</title>
-  <link href="style2.css" rel="stylesheet" type="text/css" />
-  <link  rel="stylesheet" href="css/style2.css">
+  <link href="style3.css" rel="stylesheet" type="text/css" />
+  <link  rel="stylesheet" href="css/style3.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="icon" type="image/jpg">
 </head>
 
 <body>
-        <header class="header">
+  <header class="header">
             <div class="container header__container">
                 <a href="index.html" class="logo">
                     <img class="logo__img" src="Лого.jpg">
                 </a>
-
                 <button class="header__burger-btn" id="burger">
                     <span></span><span class = "span1"></span><span></span>
                 </button>
-
                 <nav class="menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
@@ -49,6 +47,35 @@
             </div>
         </header>
     <main>
+<div class="price-list">
+  <h2>Price List</h2>
+  <table id="servicesTable">
+    <tr>
+      <th>Service</th>
+      <th>Duration</th>
+      <th>Price</th>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Haircut</td>
+      <td>60 minutes</td>
+      <td>50</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Manicure</td>
+      <td>45 minutes</td>
+      <td>30</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Pedicure</td>
+      <td>60 minutes</td>
+      <td>40</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Facial</td>
+      <td>90 minutes</td>
+      <td>80</td>
+    </tr>
+  </table>
     </main>
     <footer>
         <div class="f1">

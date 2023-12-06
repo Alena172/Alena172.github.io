@@ -25,4 +25,3 @@ document.body.addEventListener('click', event => {
     // Действие при клике
     document.querySelector(".header").classList.remove("open")
 });
-

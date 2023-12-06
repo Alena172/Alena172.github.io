@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>beauty_studio</title>
-  <link href="style2.css" rel="stylesheet" type="text/css" />
-  <link  rel="stylesheet" href="css/style2.css">
+  <link href="style3.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="icon" type="image/jpg">
@@ -17,7 +16,6 @@
                 <a href="index.html" class="logo">
                     <img class="logo__img" src="Лого.jpg">
                 </a>
-
                 <button class="header__burger-btn" id="burger">
                     <span></span><span class = "span1"></span><span></span>
                 </button>
@@ -29,7 +27,7 @@
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">
+                          <a class="menu__link" href="index2.html">
                                 Услуги
                             </a>
                         </li>
@@ -48,6 +46,50 @@
             </div>
         </header>
     <main>
+<div class="price-list">
+  <h2>Price List</h2>
+  <table id="servicesTable">
+    <tr>
+      <th>Услуга</th>
+      <th>Длительность</th>
+      <th>Цена</th>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Стрижка женская</td>
+      <td>60 минут</td>
+      <td>1200</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Стрижка горячим лезвием</td>
+      <td>80 минут</td>
+      <td>2000</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Окрашивание в 1 тон короткая</td>
+      <td>100 минут</td>
+      <td>1700</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Мелирование</td>
+      <td>180 минут</td>
+      <td>2800</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Восстановление волос</td>
+      <td>120 минут</td>
+      <td>1500</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Косоплетение</td>
+      <td>60 минут</td>
+      <td>700</td>
+    </tr>
+    <tr onclick="toggleDescription(this)">
+      <td>Экспресс-укладка</td>
+      <td>30 минут</td>
+      <td>900</td>
+    </tr>
+  </table>
     </main>
     <footer>
         <div class="f1">
@@ -96,5 +138,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="f.js"></script>
 </body>
 </html>
