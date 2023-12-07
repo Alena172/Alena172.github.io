@@ -406,7 +406,10 @@ tr{
 
 .description td{
   text-align: justify!important;
+  outline-offset: rgba(255, 182, 182, 0.459) dotted 4px;
 }
+
+
   .icon {
     display: inline-block;
     cursor: pointer;
