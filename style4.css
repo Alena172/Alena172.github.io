@@ -4,6 +4,10 @@
     padding: 20px;
   }
   
+  main {
+    min-height: 100dvh;
+  }
+
   h1{
     text-align: center;
     padding: 10px;

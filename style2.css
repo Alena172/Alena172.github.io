@@ -4,6 +4,10 @@
   padding: 20px;
 }
 
+main {
+  min-height: 100dvh;
+}
+
 html {
     overflow-x: hidden;
     --color1: #848484;

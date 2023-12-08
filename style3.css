@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 20px;
 }
+main {
+  min-height: 100dvh;
+}
 
 html {
     overflow-x: hidden;
@@ -466,3 +469,9 @@ tr{
   #icon3 {
     margin-left: 10px;
   }
+.container1 a{
+  padding: 10px;
+  background-color: var(--color3);
+  color: white;
+  border-radius: 20px;
+}

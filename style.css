@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+main {
+  min-height: 100dvh;
+}
+
 h1, h2{
     text-align: center;
 }
