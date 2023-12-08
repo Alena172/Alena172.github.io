@@ -19,15 +19,19 @@ a {
 h1, h2{
     text-align: center;
 }
+
+h1{
+  padding: 10px;
+  	border-top: 3px double var(--color3);
+    border-bottom: 3px double var(--color3);
+}
+
 body {
     margin: 0;
     font-family: Arial, Verdana, sans-serif;
 }
 
 
-.container {
-    padding: 20px;
-}
 
 .header {
     box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
@@ -322,9 +326,84 @@ h2{
         grid-template-rows: 1fr 1fr;
         gap: 40px 40px;
         grid-template-areas:
-            "card1 card2"
-            "card3 card4"
+            "block1 block2"
+            "block3 block4"
     }
+    .card::before {
+      transition: all 0.5s ease;
+      content: ""; 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.11); 
+    }
+    
+    .card:hover {
+      transition: all 0.5s ease;
+      filter: grayscale(0%);
+    }
+
+    .card1 {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(стрижки.jpg);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(100%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
+    }
+  
+    .card2 {
+      grid-area: card2;
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(косметология.png);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(100%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
+    }
+  
+  
+    .card3 {
+      grid-area: card3;
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(маникюр.png);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(100%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
+    }
+    .card4 {
+      grid-area: card4;
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(визаж.jpeg);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(100%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
+    }
+
   }
   
   @media (max-width: 712px) {
@@ -336,10 +415,68 @@ h2{
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 40px 0px;
         grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4";
+            "block1"
+            "block2"
+            "block3"
+            "block4";
+    }
+    .card1 {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(стрижки.jpg);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(0%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
+    }
+  
+    .card2 {
+      grid-area: card2;
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(косметология.png);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(0%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
+    }
+  
+  
+    .card3 {
+      grid-area: card3;
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(маникюр.png);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(0%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
+    }
+    .card4 {
+      grid-area: card4;
+      position: relative;
+      width: 100%;
+      height: 250px;
+      display: block;
+      background-image: url(визаж.jpeg);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      filter: grayscale(0%);
+      overflow: hidden; 
+      transition: all 0.5s ease;
     }
   }
 
@@ -348,104 +485,32 @@ h2{
   border-radius: 20px;
 }
 
-.overlay{
-    top: 0px;
-    left:0px;
-    width: 100%;
-    height: 250px;
-    border-radius: 20px;
-    position: absolute;
-    opacity: 0;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.61));
-    transition: 0.5s;
- }
-
- .card1 {
-    grid-area: card1;
-    position: relative;
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(стрижки.jpg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-
+.block{
+  border-bottom: 3px solid var(--color3);
+}
+.block h2{
+  color: var(--color3);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+  .card:hover::before {
+    transition: all 0.5s ease;
+    background: none;
+  }
+  .block1{
+    grid-area: block1;
+  }
+  .block2{
+    grid-area: block2;
+  }
+  .block3{
+    grid-area: block3;
+  }
+  .block4{
+    grid-area: block4;
   }
   
-  .card1:hover .overlay{
-    opacity: 1;
-    transition: 0.5s;
-  }
 
-  .card2 {
-    grid-area: card2;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 250px;
-    background-image: url(косметология.png  );
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
-
-  .card2:hover .overlay{
-    opacity: 1;
-    transition: 0.5s;
-  }
-
-  .card3 {
-    grid-area: card3;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 250px;
-    background-image: url(маникюр.png);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
-
-  .card3:hover .overlay{
-    opacity: 1;
-    transition: 0.5s;
-  }
-
-  .card4 {
-    grid-area: card4;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 250px;
-    background-image: url(визаж.jpeg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
-
-  .card4:hover .overlay{
-    opacity: 1;
-    transition: 0.5s;
-  }
-  
-  .overlay h1{
-    color: white;
-    position: relative;
-    bottom: -160px;
-  }
  
 
   .icon {

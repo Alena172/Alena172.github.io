@@ -1,4 +1,50 @@
-html {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1{
+    text-align: center;
+    padding: 10px;
+    border-top: 3px double var(--color3);
+    border-bottom: 3px double var(--color3);
+  }
+  
+  .promotion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .promotion img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .promotion .description {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .promotion h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .promotion p {
+    color: #666;
+    margin: 0;
+  }
+
+
+
+  html {
     overflow-x: hidden;
     --color1: #848484;
     --color2: #4E4E4E;
@@ -349,66 +395,6 @@ h2{
             "card4";
     }
   }
-
-h1 {
-  padding: 10px;
-  text-align: center;
-  border-top: 3px double var(--color3);
-  border-bottom: 3px double var(--color3);
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-table {
-  width: 80%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-th {
-  color: #333;
-  text-transform: uppercase;
-  padding: 15px;
-  font-weight: bold;
-}
-
-td {
-  padding: 15px;
-  font-size: 14px;
-}
-
-
-tr{
-  cursor: pointer;
-  border-bottom: 3px double rgba(255, 182, 182, 0.459);
-}
-
-#servicesTable td {
-  text-align: left; 
-}
-#servicesTable td:nth-child(2) {
-  text-align: center; 
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px;
-  z-index: 1;
-}
-
-.description td{
-  text-align: justify!important;
-  background-color: rgba(255, 182, 182, 0.459);
-}
 
 
   .icon {
