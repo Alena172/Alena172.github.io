@@ -469,9 +469,18 @@ tr{
   #icon3 {
     margin-left: 10px;
   }
-.container1 a{
+
+.prom{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prom a{
   padding: 10px;
   background-color: var(--color3);
   color: white;
   border-radius: 20px;
 }
+
