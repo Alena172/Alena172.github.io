@@ -1,3 +1,9 @@
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 html {
     overflow-x: hidden;
     --color1: #848484;
@@ -319,15 +325,15 @@ h2{
   
 @media (min-width: 713px) {
     .cont_grid {
-        z-index: 2;
-        margin: 60px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 40px 40px;
-        grid-template-areas:
-            "block1 block2"
-            "block3 block4"
+      z-index: 2;
+      margin: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 40px 40px;
+      grid-template-areas:
+        "block1 block2"
+        "block3 block4"
     }
     .card::before {
       transition: all 0.5s ease;
