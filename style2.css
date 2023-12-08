@@ -177,49 +177,16 @@ body {
   filter: grayscale(100%);
 }
 
-.card2 {
-  grid-area: card2;
-  position: relative;
-  width: 100%;
-  height: 250px;
-  display: block;
-  background-image: url(косметология.png);
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+.card2 { 
   filter: grayscale(100%);
-  overflow: hidden; 
-  transition: all 0.5s ease;
 }
 
 
 .card3 {
-  grid-area: card3;
-  position: relative;
-  width: 100%;
-  height: 250px;
-  display: block;
-  background-image: url(маникюр.png);
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
   filter: grayscale(100%);
-  overflow: hidden; 
-  transition: all 0.5s ease;
 }
-.card4 {
-  grid-area: card4;
-  position: relative;
-  width: 100%;
-  height: 250px;
-  display: block;
-  background-image: url(визаж.jpeg);
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+.card4 { 
   filter: grayscale(100%);
-  overflow: hidden; 
-  transition: all 0.5s ease;
 }
 }
 
