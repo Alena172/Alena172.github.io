@@ -28,12 +28,6 @@ body {
     font-family: Arial, Verdana, sans-serif;
 }
 
-.container1 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .header {
     box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
 }
@@ -200,7 +194,11 @@ body {
 }
 
 @media (min-width: 1001px) {
-
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
     footer {
         color: white;
