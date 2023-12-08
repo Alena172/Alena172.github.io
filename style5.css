@@ -1,3 +1,9 @@
+.questions{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
 html {
     overflow-x: hidden;
     --color1: #848484;
@@ -10,28 +16,71 @@ html {
 *::after {
     box-sizing: inherit;
 }
+  
+  main {
+    min-height: 100dvh;
+  }
+
+  h1{
+    text-align: center;
+    padding: 10px;
+    border-top: 3px double var(--color3);
+    border-bottom: 3px double var(--color3);
+  }
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    background-color: rgba(243, 186, 186, 0.644);
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+.answer.active {
+    margin: 5px;
+    border-left: 2px solid var(--color3);
+    text-align: justify;
+    display: block;
+    padding: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 a {
     color: inherit;
     text-decoration: none;
 }
 
-main {
-  min-height: 100dvh;
-}
-
 h1, h2{
     text-align: center;
 }
-
-h2{
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-
 body {
     margin: 0;
     font-family: Arial, Verdana, sans-serif;
+}
+
+
+.container {
+    padding: 20px;
 }
 
 .header {
@@ -133,78 +182,10 @@ body {
     flex-grow: 1;
 }
 
-.main_im{
-    z-index: -1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    background-image: url(фон.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-.overlay{
-    z-index: -1;
-    top: 0px;
-    left:0px;
-    width: 100%;
-    height: 400px;
-    filter: blur(2px);
-    position: absolute;
-    background-color: black;
-    opacity: 0.6;
-}
-
-.main_im h1{
-    color: rgba(255, 255, 255, 0.842);
-    z-index: 1;
-}
-
-.main_im p{
-    max-width: 700px;
-    font-size: 14px;
-    text-align: center;
-    color:  rgba(255, 255, 255, 0.642);
-    z-index: 1;
-}
-
-.menu__link {
-    display: block;
-}
 
 
-
-.advanteges {
-    margin-left:30px;
-    margin-right:30px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 30px 30px; 
-    grid-template-areas: 
-      "ad1 ad2 ad3"
-      "ad4 ad5 ad6"; 
-    grid-area: advanteges; 
-  }
-
-
-.ad1, .ad2, .ad3, .ad4, .ad5, .ad6 { 
-    padding: 20px;
-    color: white;
-    background-color: rgb(223, 170, 170);
-    text-align: center;
-}
 
 @media (min-width: 1001px) {
-  .container1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
 
     footer {
         color: white;
@@ -222,16 +203,6 @@ body {
 
 
 @media (min-width: 768px) and (max-width: 1000px) {
-
-    .advanteges {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "ad1 ad2"
-            "ad3 ad4"
-            "ad5 ad6";
-    }
-
     footer {
         color: white;
         grid-area: footer;
@@ -247,31 +218,15 @@ body {
     }
 }
 
-
 @media (max-width: 768px) {
-  .advanteges p{
-    font-size: 12px;
-  }
-
     .header__burger-btn {
         display: block;
     }
-
-    .main_im p{
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .main_im{
-        height: 400px;
-        background-image: url(фон2.jpg);
-    }
-
     .menu{
         position: absolute;
         background-color: var(--color2);
         top: 80px;
-        left: -50px;
+        left: -50px; /* Установил расположение в самом левом краю */
         width: 100%;
         display: block;
         visibility: hidden;
@@ -298,26 +253,12 @@ body {
     .header.open .menu {
         visibility: visible;
     }
-
-    .advanteges {
-        margin-left:0px;
-        margin-right:0px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "ad1"
-            "ad2"
-            "ad3"
-            "ad4"
-            "ad5"
-            "ad6";
-    } 
-
     footer {
         color: white;
+        grid-area: footer;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 200px 150px 40px;
+        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.1fr 0.3fr;
         gap: 0px 0px;
         grid-template-areas:
           "f1"
@@ -326,14 +267,21 @@ body {
           "f4";
         background-color: var(--color1);
     }
-
+    tbody td {
+      font-size: 12px;
+    }
+    .price-list h2{
+      font-size: 20px;
+    }
+    .price-list th{
+      font-size: 14px;
+    }
 }
 
 
-
-
-iframe{
-    width: 100%;
+h2{
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 
@@ -364,14 +312,14 @@ iframe{
     position: relative;
     color: white;
   }
-
+  
   .f1 h3,
   .f2 h3,
   .f3 h3 {
     position: relative;
     color: white;
   }
-
+  
   .f1 h3:after,
   .f2 h3:after,
   .f3 h3:after{
@@ -399,7 +347,7 @@ iframe{
   footer ul{
     padding: 0px;
   }
-
+  
   footer li {
     list-style: none;
     padding-bottom: 10px;
@@ -411,112 +359,33 @@ iframe{
 
   
 @media (min-width: 713px) {
-    form {
-        max-width: 80%;
+    .cont_grid {
+        z-index: 2;
+        margin: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 120px 1fr;
-        gap: 0px 40px;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px 40px;
         grid-template-areas:
-            "lable lable"
-            "n1 n2"
-            "end end";
+            "card1 card2"
+            "card3 card4"
     }
   }
   
   @media (max-width: 712px) {
-    form {
-        max-width: 80%;
+    .cont_grid  {
+        z-index: -2;
+        margin: 60px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
+        gap: 40px 0px;
         grid-template-areas:
-            "lable"
-            "n1"
-            "n2"
-            "end";
+            "card1"
+            "card2"
+            "card3"
+            "card4";
     }
-  }
-  
-  center{
-    margin-top: 80px;
-    padding-bottom: 70px;
-    background-color: #ececec;
-  }
-
-  
-  .lable {
-    grid-area: lable;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    display: block;
-    font-weight: bold;
-  }
-  
-
-.lable h2{
-    margin: 45px;
-}
-
-  
-  .end {
-    grid-area: end;
-    width: 100%;
-  }
-  
-  
-  .n1 {
-    grid-area: n1;
-  }
-  
-  
-  .n2 {
-    grid-area: n2;
-  }
-  .sub_but{
-    color:white;
-    border: none;
-    margin-top: 20px;
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    background-color: var(--color3);
-  }
-  
-  label {
-    text-align: left;
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  select{
-    width: 100%;
-    background: transparent;
-    padding: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-top: 1px solid var(--color3);
-  }
-  
-  input {
-    width: 100%;
-    background: transparent;
-    padding: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-top: 1px solid var(--color3);
-  }
-  
-  input:hover, select:hover {
-    background-color: var(--color3);
-  }
-  
-  input:focus, select:focus{
-    background-color: var(--color3);
-    outline: 0;
-    color: white;
   }
 
 

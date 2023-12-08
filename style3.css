@@ -1,7 +1,6 @@
 .container1 {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 main {
   min-height: 100dvh;
@@ -141,37 +140,36 @@ body {
 
 
 @media (min-width: 1001px) {
-
-
-    footer {
-        color: white;
-        grid-area: footer;
-        display: grid;
-        grid-template-columns: 1.6fr 0.8fr 0.8fr 0.8fr;
-        grid-template-rows: 1.9fr 0.1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-        "f1 f2 f3 f4"
-        "f5 f5 f5 f5";
-        background-color: var(--color1);
-    }
+  footer {
+    color: white;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1.6fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "f1 f2 f3"
+    "f4 f4 f4";
+    background-color: var(--color1);
+}
 }
 
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    footer {
-        color: white;
-        grid-area: footer;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.3fr 1.4fr 0.3fr;
-        gap: 0px 0px;
-        grid-template-areas:
-        "f1 f2"
-        "f3 f4"
-        "f5 f5";
-        background-color: var(--color1);
-    }
+
+  footer {
+    color: white;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "f1 f1"
+    "f2 f3"
+    "f4 f4";
+    background-color: var(--color1);
+}
 }
 
 @media (max-width: 768px) {
@@ -214,20 +212,18 @@ body {
         visibility: visible;
     }
     footer {
-        color: white;
-        grid-area: footer;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.1fr 0.3fr;
-        gap: 0px 0px;
-        grid-template-areas:
-          "f1"
-          "f2"
-          "f3"
-          "f4"
-          "f5";
-        background-color: var(--color1);
-    }
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 150px 200px 150px 40px;
+      gap: 0px 0px;
+      grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4";
+      background-color: var(--color1);
+  }
     tbody td {
       font-size: 12px;
     }
@@ -420,25 +416,25 @@ tr{
 }
 
 
-  .icon {
-    display: inline-block;
-    cursor: pointer; 
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 0 5px 1px white;
-  }
-  
-  .icon i {
-    position: relative;
-    color: white;
-    font-size: 26px;
-    margin-top: 12px;
-    margin-left: 13px;
-    transition: all 0.25s ease;
-  }
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 5px 1px white;
+}
+
+.icon i {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 7px;
+  transition: all 0.25s ease;
+}
   
   .icon:hover i {
     color: white;
