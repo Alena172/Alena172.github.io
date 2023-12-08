@@ -174,9 +174,11 @@ body {
 
 @media (max-width: 768px) {
   p{
-    font-size: 12px;
+    font-size: 14px;
   }
-
+  h2{
+    font-size: 20px;
+  }
     .header__burger-btn {
         display: block;
     }
@@ -215,7 +217,7 @@ body {
       color: white;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 150px 200px 150px 40px;
+      grid-template-rows: 1fr 1fr 1fr 40px;
       gap: 0px 0px;
       grid-template-areas:
         "f1"
@@ -225,13 +227,13 @@ body {
       background-color: var(--color1);
   }
     tbody td {
-      font-size: 12px;
+      font-size: 14px;
     }
     .price-list h2{
       font-size: 20px;
     }
     .price-list th{
-      font-size: 14px;
+      font-size: 16px;
     }
 }
 
@@ -244,85 +246,75 @@ h2{
 
 
 .f1 {
-    grid-area: f1;
-    margin-left: 20px;
-  }
-  
-  .f2 {
-    grid-area: f2;
-    margin-left: -20px;
-  }
-  
-  .f3 {
-    margin-left: -20px;
-    grid-area: f3;
-  }
-  
-  .f4 {
-    grid-area: f4;
-    margin-left: 20px;
-  }
-  
-  .f5 {
-    grid-area: f5;
-    background-color: var(--color2);
-    color: white;
-  }
-  
-  .f2 h3,
-  .f3 h3 {
-    margin-left: 40px;
-    position: relative;
-    color: white;
-  }
-  
-  .f2 h3:after,
-  .f3 h3:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 30%;
-    height: 2px;
-    background-color: white;
-    content: "";
-  }
-  
-  .f1 h3,
-  .f4 h3 {
-    position: relative;
-    color: white;
-  }
-  
-  .f1 h3:after,
-  .f4 h3:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 30%;
-    height: 2px;
-    background-color: white;
-    content: "";
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  footer a:hover {
-    text-decoration: none;
-    color: var(--color3);
-  
-  }
-  
-  footer li {
-    list-style: none;
-    padding-bottom: 10px;
-  }
-  
-  footer p {
-    color: white;
-  } 
+  grid-area: f1;
+  margin-left: 20px;
+}
+
+
+.f2 {
+  margin-left: 20px;
+  grid-area: f2;
+}
+
+.f3 {
+  grid-area: f3;
+  margin-left: 20px;
+}
+
+.f4 {
+  grid-area: f4;
+  background-color: var(--color2);
+  color: white;
+}
+
+.f3 h3 {
+  position: relative;
+  color: white;
+}
+
+.f1 h3,
+.f2 h3,
+.f3 h3 {
+  position: relative;
+  color: white;
+}
+
+.f1 h3:after,
+.f2 h3:after,
+.f3 h3:after{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30%;
+  height: 2px;
+  background-color: white;
+  content: "";
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  transform: scale(2);
+  text-decoration: none;
+  color: var(--color3);
+
+}
+
+footer ul{
+  padding: 0px;
+}
+
+footer li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+footer p {
+  color: white;
+} 
 
   
 @media (min-width: 713px) {
@@ -384,7 +376,6 @@ th {
 
 td {
   padding: 15px;
-  font-size: 14px;
 }
 
 
@@ -420,8 +411,8 @@ tr{
   display: inline-block;
   cursor: pointer;
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 5px 1px white;
@@ -430,9 +421,9 @@ tr{
 .icon i {
   position: relative;
   color: white;
-  font-size: 20px;
-  margin-top: 8px;
-  margin-left: 7px;
+  font-size: 26px;
+  margin-top: 12px;
+  margin-left: 13px;
   transition: all 0.25s ease;
 }
   
@@ -467,6 +458,7 @@ tr{
   }
 
 .prom{
+  margin-bottom: 50px;
   display: flex;
     flex-direction: column;
     justify-content: center;
@@ -474,6 +466,8 @@ tr{
 }
 
 .prom a{
+  margin-top: 40px;
+  text-align: center;
   padding: 10px;
   background-color: var(--color3);
   color: white;
