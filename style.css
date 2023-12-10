@@ -42,12 +42,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.logo {
-    display: block;
 }
 
 .logo__img {
@@ -133,6 +127,34 @@ body {
     flex-grow: 1;
 }
 
+.menu__link {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--color2s);
+  transition: color 0.3s ease-in-out;
+}
+
+.menu__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color2);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu__link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 .main_im{
     z-index: -1;
     position: relative;
@@ -172,10 +194,6 @@ body {
     z-index: 1;
 }
 
-.menu__link {
-    display: block;
-}
-
 
 
 .advanteges {
@@ -193,6 +211,7 @@ body {
 
 
 .ad1, .ad2, .ad3, .ad4, .ad5, .ad6 { 
+  border-radius: 10px;
     padding: 20px;
     color: white;
     background-color: rgb(223, 170, 170);
@@ -270,38 +289,39 @@ body {
     .menu{
         position: absolute;
         background-color: var(--color2);
+        opacity: 0.9;
+        width: 100%;
         top: 80px;
         left: -50px;
-        width: 100%;
         display: block;
         visibility: hidden;
-        transition: transform 0.3s visibility 0.3s;
     }
-
     .menu__list {
         display: block;
     }
 
-    .menu__item:not(:last-child) {
-        margin-right: 0;
+    .menu__link::before {
+      display: none;
     }
 
     .menu__link {
-        text-align: center;
-        color: white;
-        font-size: 14px;
-        border-bottom: 1px solid white;
-        border-top: 1px solid white;
-        display: block;
-        padding: 10px;
-    }
-    .header.open .menu {
-        visibility: visible;
-    }
+      text-align: center;
+      color: white;
+      display: block;
+      padding: 20px;
+  }
+
+  .menu__link:active {
+    background-color: rgba(223, 170, 170, 0.416);
+  }
+
+  .header.open .menu {
+      visibility: visible;
+  }
 
     .advanteges {
-        margin-left:0px;
-        margin-right:0px;
+        margin-left:20px;
+        margin-right:20px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -529,23 +549,24 @@ iframe{
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 5px 1px white;
-  }
-  
-  .icon i {
+}
+
+.icon i {
     position: relative;
     color: white;
     font-size: 26px;
     margin-top: 12px;
     margin-left: 13px;
     transition: all 0.25s ease;
-  }
-  
-  .icon:hover i {
+}
+
+
+.icon:hover i {
     color: white;
-  }
-  
-  .icon::before,
-  .icon::after {
+}
+
+.icon::before,
+.icon::after {
     content: '';
     position: absolute;
     top: 0;
@@ -554,17 +575,19 @@ iframe{
     width: 100%;
     transition: all 0.4s ease;
     border-radius: 30px;
-  }
-  
-  .icon::before {
+    pointer-events: none; /* Добавьте это свойство */
+}
+
+.icon::before {
     border-radius: 0;
     margin-top: -100%;
     background: linear-gradient(#ff5f2e 0, var(--color3) 98%);
-  }
-  
-  .icon:hover::before {
+}
+
+.icon:hover::before {
     margin-top: 0;
-  }
+}
+
   
   #icon3 {
     margin-left: 10px;

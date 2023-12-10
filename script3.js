@@ -1,30 +1,12 @@
-
-// function toggleAnswer(element) {
-//     const answer = element.nextElementSibling;
-//     answer.classList.toggle('active');
-// }
-
-// notif.addEventListener('click', function(event) {
-//     if (event.target.className == 'questions') {
-//       const question = event.target.closest('.question');
-//       if (notification) {
-//         notification.remove();
-//       }
-//     }
-//   });
-
-const questionsContainer = document.querySelector('.questions');
-
-// Добавляем обработчик событий к контейнеру
-questionsContainer.addEventListener('click', function (event) {
-    // Проверяем, был ли клик по элементу с классом "question"
+document.querySelector('.questions').addEventListener('click', function (event) {
     if (event.target.classList.contains('question')) {
-        toggleAnswer(event.target);
+        const faqItem = event.target.closest('.faq-item');
+        const answer = faqItem.querySelector('.answer');
+        answer.classList.toggle('open');
+        if (answer.classList.contains('open')) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+            answer.style.maxHeight = 0;
+        }
     }
 });
-
-// Функция для переключения ответа
-function toggleAnswer(questionElement) {
-    const answerElement = questionElement.nextElementSibling;
-    answerElement.classList.toggle('active');
-}
