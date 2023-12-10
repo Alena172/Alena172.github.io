@@ -80,6 +80,10 @@ body {
   box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
 }
 
+.container {
+  padding: 0 20px;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -220,7 +224,7 @@ transform-origin: bottom left;
         grid-area: footer;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4fr 4fr 1fr;
+        grid-template-rows: 3fr 4fr 0.5fr;
         gap: 0px 0px;
         grid-template-areas:
         "f1 f1"
@@ -237,7 +241,7 @@ transform-origin: bottom left;
     .menu{
       position: absolute;
       background-color: var(--color2);
-      opacity: 0.9;
+      opacity: 0.93;
       width: 100%;
       top: 80px;
       left: -50px;
@@ -259,7 +263,7 @@ transform-origin: bottom left;
     padding: 20px;
   }
 
-  .menu__link:active {
+  .menu__link:hover {
     background-color: rgba(223, 170, 170, 0.416);
   }
 
@@ -271,7 +275,7 @@ transform-origin: bottom left;
         grid-area: footer;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 40px;
+        grid-template-rows: 2fr 2.5fr 2fr 0.5fr;
         gap: 0px 0px;
         grid-template-areas:
           "f1"
@@ -320,6 +324,16 @@ h2{
     background-color: var(--color2);
     color: white;
   }
+
+  .f4 p{
+    text-align: center;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .f1 p{
+    margin: 20px 0;
+  }
   
   .f3 h3 {
     position: relative;
@@ -366,9 +380,10 @@ h2{
     padding-bottom: 10px;
   }
   
-  footer p {
-    color: white;
-  } 
+  footer p{
+    font-size: 16px;
+    margin: 0 auto;
+  }
 
   
 @media (min-width: 713px) {

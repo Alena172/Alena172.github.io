@@ -46,6 +46,10 @@ body {
     box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
 }
 
+.container {
+  padding: 20px;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -224,7 +228,7 @@ transform-origin: bottom left;
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4fr 4fr 1fr;
+    grid-template-rows: 3fr 4fr 0.5fr;
     gap: 0px 0px;
     grid-template-areas:
     "f1 f1"
@@ -244,7 +248,7 @@ transform-origin: bottom left;
       z-index: 1;
       position: absolute;
       background-color: var(--color2);
-      opacity: 0.9;
+      opacity: 0.93;
       width: 100%;
       top: 80px;
       left: -50px;
@@ -266,7 +270,7 @@ transform-origin: bottom left;
     padding: 20px;
 }
 
-.menu__link:active {
+.menu__link:hover{
   background-color: rgba(223, 170, 170, 0.416);
 }
 
@@ -278,7 +282,7 @@ transform-origin: bottom left;
       color: white;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 40px;
+      grid-template-rows: 2fr 2.5fr 2fr 0.5fr;
       gap: 0px 0px;
       grid-template-areas:
         "f1"
@@ -317,6 +321,16 @@ h2{
   grid-area: f4;
   background-color: var(--color2);
   color: white;
+}
+
+.f4 p{
+  text-align: center;
+  padding: 0;
+  margin: 20px auto;
+}
+
+.f1 p{
+  margin: 20px 0;
 }
 
 .f3 h3 {
@@ -365,9 +379,9 @@ footer li {
 }
 
 footer p {
-  color: white;
+  font-size: 16px;
+  margin: 0 auto;
 } 
-
 
   
 @media (min-width: 713px) {
@@ -555,23 +569,24 @@ footer p {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 5px 1px white;
-  }
-  
-  .icon i {
+}
+
+.icon i {
     position: relative;
     color: white;
     font-size: 26px;
     margin-top: 12px;
     margin-left: 13px;
     transition: all 0.25s ease;
-  }
-  
-  .icon:hover i {
+}
+
+
+.icon:hover i {
     color: white;
-  }
-  
-  .icon::before,
-  .icon::after {
+}
+
+.icon::before,
+.icon::after {
     content: '';
     position: absolute;
     top: 0;
@@ -580,17 +595,19 @@ footer p {
     width: 100%;
     transition: all 0.4s ease;
     border-radius: 30px;
-  }
-  
-  .icon::before {
+    pointer-events: none; /* Добавьте это свойство */
+}
+
+.icon::before {
     border-radius: 0;
     margin-top: -100%;
     background: linear-gradient(#ff5f2e 0, var(--color3) 98%);
-  }
-  
-  .icon:hover::before {
+}
+
+.icon:hover::before {
     margin-top: 0;
-  }
+}
+
   
   #icon3 {
     margin-left: 10px;
