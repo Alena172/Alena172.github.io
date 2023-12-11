@@ -1,3 +1,5 @@
+
+
 document.getElementById('servicesTable').addEventListener('click', function (event) {
     var target = event.target;
     while (target !== this) {
@@ -9,7 +11,10 @@ document.getElementById('servicesTable').addEventListener('click', function (eve
       target = target.parentNode;
     }
   });
-
   function toggleDescription(element) {
     element.classList.toggle('show');
   }
+
+
+
+

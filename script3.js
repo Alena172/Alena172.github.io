@@ -1,3 +1,5 @@
+
+
 document.querySelector('.questions').addEventListener('click', function (event) {
     if (event.target.classList.contains('question')) {
         const faqItem = event.target.closest('.faq-item');
@@ -10,3 +12,4 @@ document.querySelector('.questions').addEventListener('click', function (event) 
         }
     }
 });
+
