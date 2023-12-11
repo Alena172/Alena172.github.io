@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Glam_huse</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="icon" href="Лого.jpg" type="image/jpg">
+</head>
+<body>
+        <header class="header">
+            <div class="container header__container">
+                <a href="main.html" class="logo">
+                    <img class="logo__img" src="Лого.jpg">
+                </a>
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span class = "span1"></span><span></span>
+                </button>
+                <nav class="menu" id="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="main.html">
+                          Главная
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="services.html">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="promotions.html">
+                            Акции
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+    <main>
+        <div class = "main_im">
+            <h1>Glam Hues</h1>
+            <p>Ваш уютный оазис красоты и роскоши. Мы предлагаем индивидуальный подход к каждому нашему клиенту, чтобы помочь им раскрыть свою неповторимую красоту и уверенность.</p>
+            <p>Наша команда талантливых стилистов и визажистов обладает богатым опытом и страстью к созданию неповторимых образов. Мы специализируемся на высококачественных услугах по уходу за волосами, макияжу, маникюру, педикюру и другим процедурам красоты, чтобы помочь вам достичь идеального внешнего вида.</p>
+            <div class = "overlay"></div>
+        </div>
+        <div class = "container1">
+        <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+        <div class = "advanteges">
+            <div class = "ad1"><h3>Профессиональная команда экспертов:</h3><p>Наш коллектив состоит из опытных стилистов, визажистов и мастеров маникюра, которые постоянно совершенствуют свое мастерство и следят за последними тенденциями индустрии красоты.</p></div>
+            <div class = "ad2"><h3>Индивидуальный подход:</h3><p> Мы уделяем особое внимание потребностям каждого клиента, стремясь предложить персонализированные решения и создать уникальный образ, отвечающий его индивидуальным предпочтениям и стилю.</p></div>
+            <div class = "ad3"><h3>Использование качественных продуктов:</h3><p> Мы работаем только с высококачественными косметическими и уходовыми средствами, чтобы обеспечить нашим клиентам безопасность и эффективность процедур.</p></div>
+            <div class = "ad4"><h3>Уютная атмосфера:</h3><p> Посещение нашего салона - это не только уход за внешностью, но и возможность расслабиться и насладиться уютной обстановкой, созданной для вашего комфорта.</p></div>
+            <div class = "ad5"><h3>Инновационные техники:</h3><p> Мы постоянно следим за новейшими тенденциями и инновациями в индустрии красоты, чтобы предлагать нашим клиентам самые современные и эффективные методики ухода.</p></div>
+            <div class = "ad6"><h3>Комфорт и удобство:</h3><p> Мы ценим ваше время и комфорт, поэтому стремимся создать приятную и удобную атмосферу в нашем салоне. У нас вы сможете расслабиться и насладиться процедурами красоты, зная, что вы находитесь в заботливых руках наших специалистов. </p></div>
+        </div>
+        <div class = "center">
+          <form method="post" id = "form">
+          <div class="lable">
+            <h2>Оставьте заявку</h2>
+          </div>
+          <div class="end">
+              <br>
+              <label for="comm">Комментарий:</label>
+              <input  class = "comment" type="text" id="comm" name="comm">
+              <br>
+              <br>
+              <button class ="sub_but" type="submit">Отправить</button>
+          </div>
+          <div class="n1">
+              <label for="text-input">Имя:</label>
+              <input type="text" id="text-input" name="name" required>
+              <label for="tel-input">Телефон:</label>
+              <input type="tel" id="tel-input" name="telephone" placeholder="+79119229394" pattern="\+7[0-9]{10}" required>
+          </div>
+          <div class="n2">
+            <label for="services">Услуга:</label>
+            <select id="services" name="services">
+              <option>--</option>
+              <option>Стилистика</option>
+              <option>Косметология</option>
+              <option>Маникюр</option>
+              <option>Визаж</option>
+            </select>
+              <label class="label" for="datetime-input">Дата:</label>
+              <input type="datetime-local" id="datetime-input" name="datetime" min="2023-01-01T00:00" max="2023-12-31T23:59" required placeholder="">
+          </div>
+        </form>
+      </div>
+        <h2>РАСПОЛОЖЕНИЕ</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1488.3796227551484!2d37.51241093758753!3d55.70365262599484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c69830fa5a5%3A0x8f569e19438a7de1!2z0KbQtdC90YLRgCDQsNGO0YDQstC10LTRiyDQuCDQudC-0LPQuCAi0JrQtdGA0LDQu9CwIg!5e0!3m2!1sru!2sru!4v1701375328928!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="f1">
+            <h3>О нас</h3>
+            <p>Каждый день мы открываем двери нашего салона красоты для того, чтобы подарить нашим клиентам удовольствие
+              быть красивыми!</p>
+            <div class="icon-container">
+              <div class="icon">
+                <a href = "https://www.youtube.com/"><i class="zmdi zmdi-youtube-play"></i></a>
+              </div>
+              <div class="icon">
+                <a href = "https://web.telegram.org/"><i class="zmdi zmdi-mail-send"></i></a>
+              </div>
+              <div class="icon">
+                <a href = "https://vk.com/"><i id="icon3" class="zmdi zmdi-vk"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="f2">
+            <h3>Полезные ссылки</h3>
+              <ul>
+                <li><a href="faq.html">Часто задаваемые вопросы</a></li>
+                <li><a href="price_list_1.html">Стилистика</a></li>
+                <li><a href="price_list_2.html">Косметология</a></li>
+                <li><a href="price_list_3.html">Маникюр</a></li>
+                <li><a href="price_list_4.html">Визаж</a></li>
+              </ul>
+          </div>
+          <div class="f3">
+            <h3>Свяжитесь с нами</h3>
+            <ul>
+              <li><p>Мичуринский пр., 3, Москва, 119192</p></li>
+              <li><a href="tel:+79165432145">+7 916 543 21 45</a></li>
+              <li><a href="mailto:beauty_studioe@gmail.com">glam_huse@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="f4">
+            <p> &copy; 2023 ИКБО-20-22 Яковлева Алёна Михайловна</p>
+          </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
